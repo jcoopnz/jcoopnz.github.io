@@ -1,9 +1,9 @@
 @import url("reset.css");
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;500&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;500&display=swap");
 
 * {
   color: silver;
-  font-family: 'Inter', sans-serif;
+  font-family: "Inter", sans-serif;
   font-weight: 300;
 }
 
@@ -23,11 +23,21 @@ header {
   align-items: center;
 }
 
-header img {
+header .profile {
   width: 25vw;
-  margin-right: 20px;
+  height: 25vw;
   max-width: 100px;
+  max-height: 100px;
+  margin-right: 20px;
   border-radius: 50%;
+  background: url("/public/8-bit-me.gif") no-repeat center center;
+  background-size: cover;
+  transition: background 150ms ease;
+}
+
+header .profile:hover {
+  background: url("/public/normal-me.webp") no-repeat center center;
+  background-size: cover;
 }
 
 h1, h2 {
