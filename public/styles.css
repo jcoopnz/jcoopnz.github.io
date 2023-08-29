@@ -30,13 +30,13 @@ header .profile {
   max-height: 100px;
   margin-right: 20px;
   border-radius: 50%;
-  background: url("/public/8-bit-me.gif") no-repeat center center;
+  background: url("/public/images/8-bit-me.gif") no-repeat center center;
   background-size: cover;
   transition: background 150ms ease;
 }
 
 header .profile:hover {
-  background: url("/public/normal-me.webp") no-repeat center center;
+  background: url("/public/images/normal-me.webp") no-repeat center center;
   background-size: cover;
 }
 
