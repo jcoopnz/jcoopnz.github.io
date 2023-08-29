@@ -1,0 +1,131 @@
+@import url("reset.css");
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;500&display=swap');
+
+* {
+  color: silver;
+  font-family: 'Inter', sans-serif;
+  font-weight: 300;
+}
+
+body {
+  width: 90vw;
+  max-width: 500px;
+  margin: 100px auto;
+  background-color: black;
+}
+
+header, section {
+  margin-bottom: 40px;
+}
+
+header {
+  display: flex;
+  align-items: center;
+}
+
+header img {
+  width: 25vw;
+  margin-right: 20px;
+  max-width: 100px;
+  border-radius: 50%;
+}
+
+h1, h2 {
+  font-weight: 500;
+  color: white;
+}
+
+h2 {
+  margin-bottom: 10px;
+}
+
+p {
+  line-height: 1.4;
+}
+
+a:hover, a:focus {
+  outline: 0;
+  color: white;
+}
+
+a:focus:not(.about-section a) {
+  font-weight: 500;
+}
+
+.about-section p, .item-summary {
+  color: silver;
+}
+
+.about-section a {
+  text-decoration: none;
+}
+
+.experience-item, .side-project-item {
+  display: flex;
+  margin-bottom: 15px;
+}
+
+.date {
+  flex-shrink: 0;
+  width: 100px;
+}
+
+.date p, .item-technologies {
+  color: grey;
+}
+
+.item-technologies {
+  font-family: monospace;
+  font-size: .8rem;
+  font-weight: 300;
+}
+
+.item-link {
+  display: block;
+  margin-bottom: 5px;
+}
+
+.links a {
+  display: block;
+  margin-bottom: 5px;
+}
+
+.material-symbols-outlined {
+  font-size: .5rem;
+  vertical-align: middle;
+}
+
+@media only screen and (max-width: 500px) {
+  h1 {
+    font-size: min(7.5vw, 2rem);
+  }
+
+  h2 {
+    font-size: min(5vw, 1.5rem);
+  }
+
+  header img {
+    margin-left: 0;
+    margin-right: min(20px, 3vw);
+  }
+
+  header p {
+    font-size: min(4.5vw, 1rem);
+  }
+
+  .experience-item, .side-project-item {
+    flex-direction: column;
+    margin-bottom: 20px;
+  }
+
+  .date {
+    width: 200px;
+    margin-bottom: 5px;
+  }
+}
+
+@media only screen and (max-width: 350px) {
+  body {
+    margin: 80px auto;
+  }
+}
