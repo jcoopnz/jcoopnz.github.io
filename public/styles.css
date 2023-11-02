@@ -90,12 +90,7 @@ a:focus:not(.about-section a) {
   font-weight: 300;
 }
 
-.item-link {
-  display: block;
-  margin-bottom: 5px;
-}
-
-.links a {
+.item-link, .links a {
   display: block;
   margin-bottom: 5px;
 }
