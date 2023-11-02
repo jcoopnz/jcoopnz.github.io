@@ -1,5 +1,3 @@
-@import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;500&display=swap");
-
 /* resets */
 html {
   box-sizing: border-box;
@@ -108,11 +106,6 @@ a:focus:not(.about-section a) {
 .item-link, .links a {
   display: block;
   margin-bottom: 5px;
-}
-
-.material-symbols-outlined {
-  font-size: .5rem;
-  vertical-align: middle;
 }
 
 @media only screen and (max-width: 500px) {
