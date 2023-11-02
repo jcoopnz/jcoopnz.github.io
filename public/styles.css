@@ -17,7 +17,7 @@ body, h1, h2, h3, h4, h5, h6, p, ol, ul {
 * {
   color: silver;
   font-family: Helvetica, Verdana, Arial;
-  font-weight: 300;
+  font-weight: lighter;
 }
 
 body {
@@ -37,10 +37,8 @@ header {
 }
 
 header .profile {
-  width: 25vw;
-  height: 25vw;
-  max-width: 100px;
-  max-height: 100px;
+  width: 100px;
+  height: 100px;
   margin-right: 20px;
   border-radius: 50%;
   background: url("images/8-bit-me.gif") no-repeat center center;
@@ -54,7 +52,7 @@ header .profile:hover {
 }
 
 h1, h2 {
-  font-weight: 500;
+  font-weight: normal;
   color: white;
 }
 
@@ -72,7 +70,7 @@ a:hover, a:focus {
 }
 
 a:focus:not(.about-section a) {
-  font-weight: 500;
+  font-weight: bold;
 }
 
 .about-section p, .item-summary {
@@ -90,7 +88,7 @@ a:focus:not(.about-section a) {
 
 .date {
   flex-shrink: 0;
-  width: 100px;
+  width: 90px;
 }
 
 .date p, .item-technologies {
@@ -100,7 +98,7 @@ a:focus:not(.about-section a) {
 .item-technologies {
   font-family: Monaco, 'Courier New';
   font-size: .8rem;
-  font-weight: 300;
+  margin-top: 5px;
 }
 
 .item-link, .links a {
@@ -108,22 +106,29 @@ a:focus:not(.about-section a) {
   margin-bottom: 5px;
 }
 
+.links {
+  display: flex;
+  justify-content: space-evenly;
+}
+
 @media only screen and (max-width: 500px) {
   h1 {
-    font-size: min(7.5vw, 2rem);
+    font-size: 2rem;
   }
 
   h2 {
-    font-size: min(5vw, 1.5rem);
+    font-size: 1.5rem;
   }
 
   header .profile {
+    width: 80px;
+    height: 80px;
     margin-left: 0;
-    margin-right: min(20px, 3vw);
+    margin-right: 10px;
   }
 
   header p {
-    font-size: min(4.5vw, 1rem);
+    font-size: 1rem;
   }
 
   .experience-item, .side-project-item {
@@ -139,6 +144,6 @@ a:focus:not(.about-section a) {
 
 @media only screen and (max-width: 350px) {
   body {
-    margin: 40px auto;
+    margin: 50px auto;
   }
 }
