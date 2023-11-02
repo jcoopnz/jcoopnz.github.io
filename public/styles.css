@@ -64,21 +64,23 @@ p {
   line-height: 1.4;
 }
 
+a:not(.about-section a) {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bolder;
+}
+
 a:hover, a:focus {
   outline: 0;
   color: white;
 }
 
-a:focus:not(.about-section a) {
-  font-weight: bold;
-}
-
-.about-section p, .item-summary {
-  color: silver;
-}
-
 .about-section a {
   text-decoration: none;
+}
+
+.links a {
+  font-size: 1.25rem;
 }
 
 .experience-item, .side-project-item {
@@ -99,11 +101,6 @@ a:focus:not(.about-section a) {
   font-family: Monaco, 'Courier New';
   font-size: .8rem;
   margin-top: 5px;
-}
-
-.item-link, .links a {
-  display: block;
-  margin-bottom: 5px;
 }
 
 .links {
