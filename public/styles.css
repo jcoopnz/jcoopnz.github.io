@@ -36,7 +36,8 @@ header {
   align-items: center;
 }
 
-header .profile {
+.profile-pic {
+  flex-shrink: 0;
   width: 100px;
   height: 100px;
   margin-right: 20px;
@@ -46,7 +47,7 @@ header .profile {
   transition: background 150ms ease;
 }
 
-header .profile:hover {
+.profile-pic:hover {
   background: url("images/normal-me.webp") no-repeat center center;
   background-size: cover;
 }
@@ -79,13 +80,9 @@ a:hover, a:focus {
   text-decoration: none;
 }
 
-.links a {
-  font-size: 1.25rem;
-}
-
 .experience-item, .side-project-item {
   display: flex;
-  margin-bottom: 15px;
+  margin-bottom: 25px;
 }
 
 .date {
@@ -108,29 +105,18 @@ a:hover, a:focus {
   justify-content: space-evenly;
 }
 
+.links a {
+  font-size: 1.2rem;
+}
+
 @media only screen and (max-width: 500px) {
-  h1 {
-    font-size: 2rem;
-  }
-
-  h2 {
-    font-size: 1.5rem;
-  }
-
-  header .profile {
+  .profile-pic {
     width: 80px;
     height: 80px;
-    margin-left: 0;
-    margin-right: 10px;
-  }
-
-  header p {
-    font-size: 1rem;
   }
 
   .experience-item, .side-project-item {
     flex-direction: column;
-    margin-bottom: 20px;
   }
 
   .date {
@@ -142,5 +128,17 @@ a:hover, a:focus {
 @media only screen and (max-width: 350px) {
   body {
     margin: 50px auto;
+  }
+
+  h1 {
+    font-size: 1.5rem;
+  }
+
+  h2 {
+    font-size: 1.25rem;
+  }
+
+  .profile-pic {
+    margin-right: 10px;
   }
 }
