@@ -1,0 +1,17 @@
+{
+  "name": "portfolio",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "devDependencies": {
+    "grunt": "^1.6.1",
+    "grunt-inline": "^0.3.7"
+  },
+  "scripts": {
+    "start": "echo \"Error: no need to serve, just run in a browser\" && exit 1",
+    "build": "grunt"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
