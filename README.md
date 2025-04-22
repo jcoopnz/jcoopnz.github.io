@@ -1,13 +1,11 @@
 # This is my portfolio
 
-It's your standard portfolio but is aiming to be as small as possible.
+A fairly standard portfolio aiming to be so in a small and aesthetically pleasing package.
 
-It's a portfolio after all. I want it to accomplish it's job, look okay and not add to the bloat of the internet.
-
-At the moment you can find it here: <https://jordy1311.github.io>
+You will find it here: https://jordy1311.web.app.
 
 ## It...
-- doesn't have **any** javascript
-- has css in the html header to reduce files transferred
+- doesn't have **ANY** javascript
+- has it's css embedded in the html to reduce the files transferred
 - uses browser safe font-families to save sending one (or many 🙃)
-- uses compressed images that still look okay
+- uses compressed images that still look great
