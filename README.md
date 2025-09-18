@@ -2,7 +2,7 @@
 
 A fairly standard portfolio aiming to be so in a small and aesthetically pleasing package.
 
-You will find it here: https://jordy1311.web.app.
+You will find it here: https://jcoopnz.github.io.
 
 ## It...
 - doesn't have **ANY** javascript
