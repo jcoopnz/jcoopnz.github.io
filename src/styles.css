@@ -47,6 +47,11 @@ header {
   transition: background 150ms ease;
 }
 
+.profile-pic:hover {
+  background: url("images/me-still.webp") no-repeat center center;
+  background-size: cover;
+}
+
 h1, h2 {
   font-weight: normal;
   color: white;
