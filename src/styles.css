@@ -22,10 +22,22 @@ body, h1, h2, h3, h4, h5, h6, p, ol, ul {
 }
 
 body {
-  width: 90vw;
-  max-width: 500px;
-  margin: 100px auto;
+  display: flex;
   background-color: black;
+}
+
+.page-content-container {
+  /* grow, shrink, basis */
+  flex: 1 1 auto;
+  max-width: 1800px;
+  display: flex;
+  justify-content: center;
+}
+
+.page-content {
+  width: 100%;
+  max-width: 800px;
+  margin: 100px 50px;
 }
 
 header, section {
@@ -112,7 +124,49 @@ a:hover, a:focus {
   font-size: 1.25rem;
 }
 
+.page-blob {
+  /* grow, shrink, basis */
+  flex: 1 1 auto;
+  padding: 16px 16px 16px 0;
+}
+
+.blob {
+  position: sticky;
+  top: 16px;
+  width: 100%;
+  min-width: 16px;
+  height: calc(100vh - 32px);
+  height: calc(100dvh - 32px);
+  border-radius: 15px;
+  overflow: hidden;
+  contain: strict;
+}
+
+.blob::before {
+  content: "";
+  position: absolute;
+  inset: 0 0 auto 0;
+  height: 200%;
+  background: linear-gradient(to bottom, #83D1E0, #EC7B85);
+  will-change: transform;
+  animation: scroll-window linear both;
+  animation-timeline: scroll(root block);
+}
+
+@keyframes scroll-window {
+  from {
+    transform: translate3d(0, 0, 0);
+  }
+  to {
+    transform: translate3d(0, -50%, 0);
+  }
+}
+
 @media only screen and (max-width: 500px) {
+  .page-content {
+    margin: 50px 16px;
+  }
+
   .profile-pic {
     width: 100px;
     height: 100px;
