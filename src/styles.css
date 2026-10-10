@@ -1,7 +1,7 @@
 /* resets */
 html {
   box-sizing: border-box;
-  font-size: 18px;
+  font-size: clamp(16px, 3vw, 22px);
   text-wrap: pretty;
 }
 
@@ -39,9 +39,9 @@ header {
 
 .profile-pic {
   flex-shrink: 0;
-  width: 100px;
-  height: 100px;
-  margin-right: 20px;
+  width: 150px;
+  height: 150px;
+  margin-right: 50px;
   border-radius: 50%;
   background:
     url("images/me.gif") no-repeat center center / cover,
@@ -88,9 +88,9 @@ a:hover, a:focus {
 }
 
 .date {
-  font-size: .75rem;
+  font-size: .8rem;
   flex-shrink: 0;
-  width: 90px;
+  width: 100px;
 }
 
 .date p, .item-technologies {
@@ -114,8 +114,9 @@ a:hover, a:focus {
 
 @media only screen and (max-width: 500px) {
   .profile-pic {
-    width: 80px;
-    height: 80px;
+    width: 100px;
+    height: 100px;
+    margin-right: 16px;
   }
 
   .experience-item, .side-project-item {
@@ -123,7 +124,7 @@ a:hover, a:focus {
   }
 
   .date {
-    width: 200px;
+    width: 100%;
     margin-bottom: 5px;
   }
 }
