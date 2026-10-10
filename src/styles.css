@@ -1,7 +1,8 @@
 /* resets */
 html {
   box-sizing: border-box;
-  font-size: 16px;
+  font-size: 18px;
+  text-wrap: pretty;
 }
 
 *, *:before, *:after {
@@ -87,6 +88,7 @@ a:hover, a:focus {
 }
 
 .date {
+  font-size: .75rem;
   flex-shrink: 0;
   width: 90px;
 }
@@ -97,7 +99,7 @@ a:hover, a:focus {
 
 .item-technologies {
   font-family: Monaco, 'Courier New';
-  font-size: .8rem;
+  font-size: .75rem;
   margin-top: 5px;
 }
 
@@ -107,7 +109,7 @@ a:hover, a:focus {
 }
 
 .links a {
-  font-size: 1.2rem;
+  font-size: 1.25rem;
 }
 
 @media only screen and (max-width: 500px) {
