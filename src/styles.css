@@ -86,8 +86,7 @@ a:not(.about-section a) {
 }
 
 a:hover, a:focus {
-  outline: 0;
-  color: white;
+  color: #83D1E0;
 }
 
 .about-section a {
