@@ -79,7 +79,7 @@ p {
   line-height: 1.4;
 }
 
-a:not(.about-section a) {
+a:not(p > a) {
   display: block;
   margin-bottom: 5px;
   font-weight: bolder;
